@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Дані про тварин</title>
+</head>
+<body>
+    <h2>Список тварин</h2>
+    <ul id="animals-list"></ul>
+
+    <script>
+        fetch('animals.json')
+            .then(response => response.text())
+            .then(textData => {
+                const animals = JSON.parse(textData);
+                const list = document.getElementById('animals-list');
+
+                animals.forEach(animal => {
+                    const listItem = document.createElement('li');
+                    
+                    listItem.innerHTML = `
+                        <strong>${animal.name}</strong> (Тип: ${animal.type})<br>
+                        <img src="${animal.photo}" alt="${animal.name}" style="width: 150px; border-radius: 8px; margin-top: 5px;">
+                        <br><br>
+                    `;
+                    
+                    list.appendChild(listItem);
+                });
+            })
+            .catch(error => {
+                console.error("Помилка завантаження даних:", error);
+            });
+    </script>
+</body>
+</html>

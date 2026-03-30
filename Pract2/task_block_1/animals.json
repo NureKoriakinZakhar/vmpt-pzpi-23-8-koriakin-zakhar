@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Капібара",
+    "type": "Ссавець",
+    "photo": "https://images.unsplash.com/photo-1716064554838-f9ae49db992b"
+  },
+  {
+    "name": "Аксолотль",
+    "type": "Амфібія",
+    "photo": "https://images.unsplash.com/photo-1712874364529-2d17f6111bb1"
+  },
+  {
+    "name": "Фенек",
+    "type": "Ссавець",
+    "photo": "https://images.unsplash.com/photo-1592787546736-4e9b0b863eb4"
+  },
+  {
+    "name": "Панголін",
+    "type": "Ссавець",
+    "photo": "https://images.unsplash.com/photo-1603703661537-137f7373028a"
+  },
+  {
+    "name": "Червона панда",
+    "type": "Ссавець",
+    "photo": "https://images.unsplash.com/photo-1656899367728-cf0194bf3aeb"
+  },
+  {
+    "name": "Вомбат",
+    "type": "Ссавець",
+    "photo": "https://images.unsplash.com/photo-1748799057613-59bea71118dc"
+  },
+  {
+    "name": "Квокка",
+    "type": "Ссавець",
+    "photo": "https://images.unsplash.com/photo-1583689856091-1f79a2a8b66c"
+  }
+]
