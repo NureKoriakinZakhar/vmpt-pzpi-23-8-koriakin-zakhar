@@ -18,7 +18,7 @@ const io = new Server(server, {
 let players = {}; 
 
 io.on('connection', (socket) => {
-    console.log('Новий кліент підключився:', socket.id);
+    console.log('Кліент підʼєднався:', socket.id);
 
     players[socket.id] = { id: socket.id, score: 0 };
 
