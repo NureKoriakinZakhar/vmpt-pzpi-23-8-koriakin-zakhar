@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Хрестики-нулики</string>
+    <string name="nav_home">Головна</string>
+    <string name="nav_game">Гра</string>
+    <string name="nav_leaderboard">Історія матчів</string>
+    <string name="home_title">Хрестики-нулики</string>
+    <string name="home_subtitle">Двоє гравців, один пристрій. Грайте поруч і переглядайте історію партій.</string>
+    <string name="home_btn_play">Грати</string>
+    <string name="home_btn_history">Історія матчів</string>
+    <string name="game_turn_x">Хід: X</string>
+    <string name="game_turn_o">Хід: O</string>
+    <string name="game_result_x">Переміг X</string>
+    <string name="game_result_o">Переміг O</string>
+    <string name="game_result_draw">Нічия</string>
+    <string name="game_btn_new_round">Нова партія</string>
+    <string name="leaderboard_title">Історія матчів</string>
+    <string name="leaderboard_empty">Поки що немає завершених матчів. Зіграйте партію, щоб побачити її тут.</string>
+    <string name="match_line_x">Перемога X</string>
+    <string name="match_line_o">Перемога O</string>
+    <string name="match_line_draw">Нічия</string>
+    <string name="match_chip_x">X</string>
+    <string name="match_chip_o">O</string>
+    <string name="match_chip_draw">Нічия</string>
+    <string name="content_desc_navigate_up">Назад</string>
+</resources>

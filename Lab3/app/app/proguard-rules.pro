@@ -1,0 +1,14 @@
+-obfuscationdictionary OBFUSCATION
+-classobfuscationdictionary OBFUSCATION
+-packageobfuscationdictionary OBFUSCATION
+-keep class * {@com.google.gson.annotations.SerializedName <fields>;}
+-keep class com.google.firebase.components.ComponentRegistrar { *; }
+-keep class com.google.firebase.components.Component { *; }
+-keep class com.google.firebase.components.ComponentContainer { *; }
+-keep class com.google.firebase.installations.FirebaseInstallationsKtxRegistrar { *; }
+-keep class com.google.firebase.installations.** { *; }
+-keep class com.google.firebase.** { *; }
+-keepclassmembers class androidx.work.OverwritingInputMerger {public <init>();}
+-keepattributes *Annotation*
+-keepattributes Signature
+-keepattributes Exceptions
