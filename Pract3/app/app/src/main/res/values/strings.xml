@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Pract3</string>
+    <string name="title_main">Оберіть завдання</string>
+    <string name="main_card_holidays_hint">Календар подій і пам’ятні дати</string>
+    <string name="main_card_game_hint">Інтуїція та трохи вдачі</string>
+    <string name="btn_holidays">Свята за місяцем</string>
+    <string name="btn_cards_game">Гра: три карти</string>
+    <string name="title_holidays">Свята в Україні</string>
+    <string name="label_choose_month">Оберіть місяць:</string>
+    <string name="btn_to_main">На головний екран</string>
+    <string name="title_cards">Вгадай виграшну карту</string>
+    <string name="cards_rules">Серед трьох закритих карт одна виграшна. Відкривайте карти по черзі, доки не знайдете виграшну.</string>
+    <string name="card_back">Карта</string>
+    <string name="card_win">Виграш!</string>
+    <string name="card_empty">Порожньо</string>
+    <string name="game_won">Вітаємо! Ви вгадали виграшну карту.</string>
+    <string name="game_try_another">Це не виграшна карта. Спробуйте іншу.</string>
+    <string name="btn_play_again">Грати знову</string>
+    <string name="month_1">Січень</string>
+    <string name="month_2">Лютий</string>
+    <string name="month_3">Березень</string>
+    <string name="month_4">Квітень</string>
+    <string name="month_5">Травень</string>
+    <string name="month_6">Червень</string>
+    <string name="month_7">Липень</string>
+    <string name="month_8">Серпень</string>
+    <string name="month_9">Вересень</string>
+    <string name="month_10">Жовтень</string>
+    <string name="month_11">Листопад</string>
+    <string name="month_12">Грудень</string>
+</resources>
