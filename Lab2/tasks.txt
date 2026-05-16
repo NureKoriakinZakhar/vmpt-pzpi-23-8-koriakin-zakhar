@@ -10,10 +10,10 @@ Express. Реалізуйте фронтенд на React для гри.
 
 ДЛЯ ЗАПУСКА СЕРВЕРА:
 1. Перейти в папку LAB2/game/server
-2. Виконати команду: npm install
-3. Виконати команду: node server.js
+2. Встановити залежності: npm install
+3. Запустити сервер: node server.js
 
 ДЛЯ ЗАПУСКА REACT:
 1. Перейти в папку LAB2/game/client
-2. Виконати команду: npm install
+2. Встановити залежності: npm install
 3. Виконати команду: npm start
