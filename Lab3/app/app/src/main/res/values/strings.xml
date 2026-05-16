@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Онлайн Клікер</string>
+    <string name="title_game">Онлайн Клікер</string>
+    <string name="hint_server_address">Адреса сервера (напр. 192.168.1.10:3001)</string>
+    <string name="hint_player_name">Ваше ім\'я</string>
+    <string name="button_connect">Підключитися</string>
+    <string name="button_disconnect">Відключитися</string>
+    <string name="button_tap">НАТИСКАЙ!</string>
+    <string name="label_my_score">Мої очки</string>
+    <string name="label_leaderboard">Таблиця лідерів</string>
+    <string name="label_rank_format">%d.</string>
+    <string name="label_players_count">Гравців: %d</string>
+    <string name="status_connected">● Підключено</string>
+    <string name="status_connecting">Підключення…</string>
+    <string name="error_empty_name">Введіть ваше ім\'я</string>
+    <string name="error_empty_address">Введіть адресу сервера</string>
+    <string name="content_desc_tap">Натискай для отримання очок</string>
+</resources>

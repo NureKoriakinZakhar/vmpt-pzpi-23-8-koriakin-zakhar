@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#3D7AB5</color>
+    <color name="primary_dark">#2C5F8A</color>
+    <color name="primary_light">#EAF2FB</color>
+
+    <color name="background">#F0F4F8</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="text_primary">#1A2B4A</color>
+    <color name="text_secondary">#6B7C93</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <color name="tap_button">#27AE60</color>
+    <color name="tap_button_dark">#1E8449</color>
+
+    <color name="rank_gold">#F0A500</color>
+    <color name="rank_silver">#9E9E9E</color>
+    <color name="rank_bronze">#8B6914</color>
+    <color name="rank_default">#1A2B4A</color>
+
+    <color name="item_me_background">#E3F0FC</color>
+    <color name="item_default_background">#FFFFFF</color>
+
+    <color name="status_connected">#27AE60</color>
+    <color name="error">#D32F2F</color>
+    <color name="divider">#E0E7EF</color>
+</resources>
