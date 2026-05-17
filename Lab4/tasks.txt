@@ -9,4 +9,69 @@
 Створіть моделі для системи бронювання готелів. 
 Реалізуйте функції для додавання та видалення бронювань, атакож перегляду доступних кімнат.
 
+СТВОРЕНА БД PostgreSQL на хості Neon DB:
+CREATE TABLE clients (
+    client_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE hotels (
+    hotel_id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    country VARCHAR(50) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    address TEXT NOT NULL,
+    stars INT CHECK (stars BETWEEN 1 AND 5),
+    description TEXT
+);
+
+CREATE TABLE rooms (
+    room_id SERIAL PRIMARY KEY,
+    hotel_id INT NOT NULL,
+    room_number VARCHAR(10) NOT NULL,
+    room_type VARCHAR(50) NOT NULL,
+    capacity INT NOT NULL CHECK (capacity > 0),
+    price_per_night DECIMAL(10, 2) NOT NULL CHECK (price_per_night > 0),
+    is_available BOOLEAN DEFAULT TRUE,
+    
+    CONSTRAINT fk_hotel FOREIGN KEY (hotel_id) REFERENCES hotels(hotel_id) ON DELETE CASCADE,
+    CONSTRAINT unique_hotel_room UNIQUE (hotel_id, room_number)
+);
+
+CREATE TABLE services (
+    service_id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL CHECK (price >= 0)
+);
+
+CREATE TABLE bookings (
+    booking_id SERIAL PRIMARY KEY,
+    client_id INT NOT NULL,
+    room_id INT NOT NULL,
+    check_in_date DATE NOT NULL,
+    check_out_date DATE NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL CHECK (total_price >= 0),
+    status VARCHAR(20) DEFAULT 'Pending' CHECK (status IN ('Pending', 'Confirmed', 'Cancelled', 'Completed')),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    CONSTRAINT check_dates CHECK (check_out_date > check_in_date),
+    CONSTRAINT fk_client FOREIGN KEY (client_id) REFERENCES clients(client_id) ON DELETE RESTRICT,
+    CONSTRAINT fk_room FOREIGN KEY (room_id) REFERENCES rooms(room_id) ON DELETE RESTRICT
+);
+
+CREATE TABLE booking_services (
+    booking_id INT NOT NULL,
+    service_id INT NOT NULL,
+    quantity INT DEFAULT 1 CHECK (quantity > 0),
+    PRIMARY KEY (booking_id, service_id),
+    
+    CONSTRAINT fk_booking FOREIGN KEY (booking_id) REFERENCES bookings(booking_id) ON DELETE CASCADE,
+    CONSTRAINT fk_service FOREIGN KEY (service_id) REFERENCES services(service_id) ON DELETE RESTRICT
+);
+
 ДЛЯ ЗАПУСКА FastAPI ВИКОНАТИ В ТЕРМІНАЛІ:
