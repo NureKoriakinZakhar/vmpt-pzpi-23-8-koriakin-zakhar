@@ -74,7 +74,7 @@ CREATE TABLE booking_services (
     CONSTRAINT fk_service FOREIGN KEY (service_id) REFERENCES services(service_id) ON DELETE RESTRICT
 );
 
-ДЛЯ ЗАПУСКУ FastAPI ВИКОНАТИ В ТЕРМІНАЛІ:
+ДЛЯ ЗАПУСКУ FastAPI:
 1. Перейти в папку Lab4/hotel_app
 2. Створити віртуальне середовище: python3 -m venv venv
 3. Активувати середовище:
