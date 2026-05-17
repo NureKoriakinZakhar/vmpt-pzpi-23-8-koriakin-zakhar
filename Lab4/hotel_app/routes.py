@@ -5,12 +5,17 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 from database import get_db
 from models import Booking, Client, Hotel, Room
-from schemas import BookingCreate, BookingRead, HotelRead, RoomRead
+from schemas import BookingCreate, BookingRead, ClientRead, HotelRead, RoomRead
 
 router = APIRouter()
 
 def nights_between(check_in: date, check_out: date) -> int:
     return (check_out - check_in).days
+
+@router.get("/clients", response_model=list[ClientRead])
+def list_clients(db: Session = Depends(get_db)):
+    stmt = select(Client).order_by(Client.client_id)
+    return list(db.execute(stmt).scalars().all())
 
 @router.get("/hotels", response_model=list[HotelRead])
 def list_hotels(db: Session = Depends(get_db)):

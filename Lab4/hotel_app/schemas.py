@@ -3,6 +3,15 @@ from decimal import Decimal
 from typing import Optional
 from pydantic import BaseModel, ConfigDict, Field
 
+class ClientRead(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    client_id: int
+    first_name: str
+    last_name: str
+    email: str
+    phone: str
+    created_at: Optional[datetime] = None
+
 class HotelRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     hotel_id: int

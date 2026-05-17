@@ -84,6 +84,7 @@ CREATE TABLE booking_services (
 5. Запустити API: uvicorn main:app --reload
 
 ЕНДПОІНТИ:
+GET /clients
 GET /hotels
 GET /hotels/{hotel_id}/rooms
 POST /bookings
