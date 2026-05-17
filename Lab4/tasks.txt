@@ -75,7 +75,6 @@ CREATE TABLE booking_services (
 );
 
 ДЛЯ ЗАПУСКУ FastAPI ВИКОНАТИ В ТЕРМІНАЛІ:
-
 1. Перейти в папку Lab4/hotel_app
 2. Створити віртуальне середовище: python3 -m venv venv
 3. Активувати середовище:
