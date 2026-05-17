@@ -74,4 +74,18 @@ CREATE TABLE booking_services (
     CONSTRAINT fk_service FOREIGN KEY (service_id) REFERENCES services(service_id) ON DELETE RESTRICT
 );
 
-ДЛЯ ЗАПУСКА FastAPI ВИКОНАТИ В ТЕРМІНАЛІ:
+ДЛЯ ЗАПУСКУ FastAPI ВИКОНАТИ В ТЕРМІНАЛІ:
+
+1. Перейти в папку Lab4/hotel_app
+2. Створити віртуальне середовище: python3 -m venv venv
+3. Активувати середовище:
+   macOS/Linux: source venv/bin/activate
+   Windows: venv\Scripts\activate
+4. Встановити залежності: pip install -r requirements.txt
+5. Запустити API: uvicorn main:app --reload
+
+ЕНДПОІНТИ:
+GET /hotels
+GET /hotels/{hotel_id}/rooms
+POST /bookings
+DELETE /bookings/{booking_id}
